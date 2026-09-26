@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPXwoxqjKsqc1RxxYayaomh",
+      "authorship_tag": "ABX9TyMFav62gTr41VuLQZXckXba",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -464,10 +464,50 @@
       ]
     },
     {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 12 — Find the first duplicate"
+      ],
+      "metadata": {
+        "id": "4QLeTmEIlIvj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [5, 3, 4, 3, 2, 5, 1]\n",
+        "found=False\n",
+        "for i in range(len(numbers)):\n",
+        "  for j in range(i+1,len(numbers)):\n",
+        "    if numbers[i]== numbers[j]:\n",
+        "      print(numbers[i])\n",
+        "      found=True\n",
+        "  if found:\n",
+        "    break"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ONNY8ExXlK_0",
+        "outputId": "d008306b-ea1f-4e56-8d4c-a48fb3012c91"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
       "cell_type": "code",
       "source": [],
       "metadata": {
-        "id": "uWfORMYjj4sT"
+        "id": "tFdUZc_jmbFP"
       },
       "execution_count": null,
       "outputs": []
