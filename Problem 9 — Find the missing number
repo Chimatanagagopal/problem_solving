@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMdGKcFTAXfc2HwnbubrRwS",
+      "authorship_tag": "ABX9TyP00Ik3Sx/cq/75c91Gdb6d",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -388,10 +388,48 @@
       ]
     },
     {
+      "cell_type": "markdown",
+      "source": [
+        "Problem 10 — Move negative numbers to the left"
+      ],
+      "metadata": {
+        "id": "c8iZWrkXC9uu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [4, -2, 7, -5, 3, -1, 8]\n",
+        "index=0\n",
+        "for i in range(len(numbers)):\n",
+        "  if numbers[i] < 0 :\n",
+        "    numbers[index], numbers[i]=numbers[i],numbers[index]\n",
+        "    index+=1\n",
+        "print(numbers)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5-4J87vOBqBX",
+        "outputId": "ebbd3376-419c-4710-b724-d04ac484a033"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[-2, -5, -1, 4, 3, 7, 8]\n"
+          ]
+        }
+      ]
+    },
+    {
       "cell_type": "code",
       "source": [],
       "metadata": {
-        "id": "5-4J87vOBqBX"
+        "id": "oEmEgDTNEUv8"
       },
       "execution_count": null,
       "outputs": []
